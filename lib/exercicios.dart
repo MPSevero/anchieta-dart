@@ -34,7 +34,9 @@ String saudar(String nome){
 
 // 6. Média
 double calcularMedia(List<double> notas) {
-
+  if(notas.isEmpty){
+    return 0.0;
+  }
   double nota = 0;
   int qtdNotas = notas.length;
 
